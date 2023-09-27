@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Container = styled.div`
 height:60px;
-${ mobile({ 'height': "50px"})};
+${ mobile({'height':"50px"})};
 
 `
 const Wrapper = styled.div`
@@ -16,7 +16,7 @@ padding: 10px 20px;
 display:flex;
 justify-content: space-between;
 align-items:center;
-${mobile({'padding' :"10px 0px"})};
+${mobile({'padding':"10px 0px"})};
 
 
  `
@@ -76,12 +76,15 @@ const MenuItem = styled.div`
 font-size:14px;
 cursor:pointer;
 margin-left:25px;
+decoration:none;
 text-decoration:none;
 ${mobile({'font-size':"12px", 'marginLeft':"10px"})};
 
 
 
 `
+
+
 
 const Navbar = () => {
   return (
